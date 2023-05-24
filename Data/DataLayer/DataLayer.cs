@@ -28,8 +28,33 @@ namespace CarParkDbAPI
             } 
         }
         #endregion
+        public List<Autovehicul> GetAllAutovehicule()
+        {
+            using var ctx = new CarDBContext();
+            return ctx.Autovehicule.Include(a=>a.CarteTehnica).ToList();
+        }
+        public Autovehicul GetAutovehicul(int id) 
+        {
+            using var ctx = new CarDBContext();
+            return ctx.Autovehicule.FirstOrDefault(a => a.Id == id);
+        }
 
-        #region AddMethod
+        public Autovehicul ChangeName(int id, string newName)
+        {
+            using var ctx = new CarDBContext();
+            var auto = ctx.Autovehicule.FirstOrDefault(a => a.Id == id);
+
+            if (auto == null) 
+            {
+                throw new InvalidIdException($"Id invalid {id}");
+            }
+
+            auto.Nume = newName;
+            ctx.SaveChanges();
+
+            return auto;
+        }
+        #region AddAuto
         public Autovehicul AdaugaAutovehicul(string nume, int producatorId)
         {
             using var ctx = new CarDBContext();

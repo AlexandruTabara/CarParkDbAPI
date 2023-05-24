@@ -5,8 +5,8 @@ using CarParkDbAPI.Models;
 Console.WriteLine("Hello, World!");
 
 //DataLayerSingleton.Instance.Seed();
-//Autovehicul jetta = DataLayerSingleton.Instance.AdaugaAutovehicul("Jetta", 1);
 //Producator renault = DataLayerSingleton.Instance.AdaugaProducator("Renault", "Paris");
+//Autovehicul jetta = DataLayerSingleton.Instance.AdaugaAutovehicul("Talisman", 2);
 
 
 //DataLayerSingleton.Instance.AdaugaCheieLaAutovehicul(Guid.NewGuid(), 1);

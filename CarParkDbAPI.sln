@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarParkDbAPI", "CarParkDbAPI\CarParkDbAPI.csproj", "{5F7C78AA-F20E-40AE-8EB5-3B4A03122EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarParkDbAPI", "CarParkDbAPI\CarParkDbAPI.csproj", "{5F7C78AA-F20E-40AE-8EB5-3B4A03122EA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{2BB7A0CF-172A-4C6C-A13D-4154AC66CEEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{2BB7A0CF-172A-4C6C-A13D-4154AC66CEEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsWebAPI", "CarsWebAPI\CarsWebAPI.csproj", "{F300FFC6-0DDB-4760-A79A-6A6A1316E526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2BB7A0CF-172A-4C6C-A13D-4154AC66CEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BB7A0CF-172A-4C6C-A13D-4154AC66CEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BB7A0CF-172A-4C6C-A13D-4154AC66CEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F300FFC6-0DDB-4760-A79A-6A6A1316E526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F300FFC6-0DDB-4760-A79A-6A6A1316E526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F300FFC6-0DDB-4760-A79A-6A6A1316E526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F300FFC6-0DDB-4760-A79A-6A6A1316E526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
